@@ -1,0 +1,16 @@
+<div class="markdown-header flex justify-between">
+  <div>
+    <span class="menu-text-color">{{ partial "docs/title" . }}</span>
+  </div>
+
+  {{ if and .File .Site.Params.BookRepo .Site.Params.BookEditPath }}
+    <div class="flex align-center">
+      {{ $date := .GitInfo.AuthorDate.Local.Format (default "January 2, 2006" .Site.Params.BookDateFormat) }}
+      <span class="menu-text-color">{{ $date }} -</span>
+      <a href="{{ .Site.Params.BookRepo }}/{{ .Site.Params.BookEditPath }}/{{ replace .File.Path "\\" "/" }}" target="_blank" rel="noopener">
+        <span>&nbsp;Editovat tuto stránku</span>
+      </a>
+    </div>
+  {{ end }}
+</div>
+  

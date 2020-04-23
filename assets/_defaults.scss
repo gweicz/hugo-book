@@ -24,19 +24,23 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 
-$color-link: #05b !default;
-$color-visited-link: #8440f1 !default;
+$gwei-grey: #2E2927 !default;
+$gwei-font-color: #342E2C !default;
+$menu-text-color: #796E69 !default;
+
+$color-link: #1275BE !default;
+$color-visited-link: #1275BE !default;
 
 $body-background: white !default;
-$body-font-color: $black !default;
+$body-font-color: $gwei-font-color !default;
 $body-font-weight: normal !default;
 
 $body-min-width: 20rem !default;
 $container-max-width: 80rem !default;
 
 $header-height: 3.5rem !default;
-$menu-width: 16rem !default;
-$toc-width: 16rem !default;
+$menu-width: 20rem !default;
+$toc-width: 14rem !default;
 
 $mobile-breakpoint: $menu-width + $body-min-width * 1.2 + $toc-width !default;
 
